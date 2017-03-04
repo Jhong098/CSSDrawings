@@ -1,3 +1,9 @@
+.navbar {
+  margin-bottom: 0px;
+}
+
+
+
 #crayon {
   background: #f3c114;
 }
@@ -32,15 +38,15 @@
   box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 #crayon div:before {
-  height: 10px;
+  height: 35px;
   left: -48px;
   top: 2px;
-  border-right: 48px solid #237449;
+  border-right: 50px solid #237449;
   border-bottom: 13px solid transparent;
   border-top: 13px solid transparent;
 }
 #crayon div:after {
-  width: 251px;
+  width: 301px;
   height: 23px;
   content: 'green';
   font-family: Arial, sans-serif;
@@ -61,6 +67,7 @@
 #sushi div {
   height: 100px;
   width: 230px;
+
   background: white;
   margin-left: -115px;
   margin-top: -37px;
@@ -70,6 +77,7 @@
   border-bottom-right-radius: 45px 50px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 60%, transparent 32%), linear-gradient(85deg, transparent 39%, rgba(0, 0, 0, 0.05) 10%, rgba(0, 0, 0, 0.05) 45%, transparent 45%);
   box-shadow: 0 25px 0 -20px rgba(0, 0, 0, 0.1);
+
 }
 
 #sushi div:before {
