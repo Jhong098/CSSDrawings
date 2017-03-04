@@ -2,6 +2,23 @@
   margin-bottom: 0px;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-default .navbar-brand {
+  color: rgb(7, 18, 23);
+}
+
+.navbar-text {
+  margin-right: 10px;
+}
+
+body {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+
 
 
 #crayon {
