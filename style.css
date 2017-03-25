@@ -21,10 +21,10 @@ body {
   font-weight: 400;
 }
 
-
-/* CRAYON */
-#crayon {
-  background: #f3c114;
+.entry {
+    text-align: center;
+    min-height: 400px;
+    position: relative;
 }
 
 .entry div {
@@ -33,16 +33,35 @@ body {
     top: 50%;
 }
 
-.entry {
-    text-align: center;
-    min-height: 400px;
-    position: relative;
-}
-
 .entry div:before, .entry div:after {
     display: block;
     content: '';
     position: absolute;
+}
+
+@media (max-width: 400px) {
+  .entry div:not(.no-scale) {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@media all and (min-width: 960px) {
+  .entry {
+    float: left;
+    width: 50%;
+  }
+  .entry.wide {
+    width: 100%;
+  }
+  .entry.threes {
+    width: 33.333%;
+  }
+}
+
+/* CRAYON */
+#crayon {
+  background: #f3c114;
 }
 
 #crayon div {
@@ -80,12 +99,12 @@ body {
 }
 
 
-/* SUSHI */
-#sushi {
+/* SUSHI-tamago */
+#sushi-tamago {
   background: rgb(120, 229, 240);
 }
 
-#sushi div {
+#sushi-tamago div {
   height: 100px;
   width: 230px;
 
@@ -101,7 +120,7 @@ body {
 
 }
 
-#sushi div:before {
+#sushi-tamago div:before {
   width:280px;
   height:60px;
   margin-left: -140px;
@@ -115,7 +134,7 @@ body {
   background-image: linear-gradient(to bottom, transparent 70%, rgba(0,0,0,0.05) 80%), linear-gradient(to right, transparent 41%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 50%, transparent 50%);
 }
 
-#sushi div:after {
+#sushi-tamago div:after {
   width:50px;
   height:113px;
   margin-left: -20px;
@@ -124,6 +143,42 @@ body {
   background: rgb(45, 64, 22);
   background-image: linear-gradient(to right, transparent 60%, rgba(0, 0, 0, 0.1) 60%);
 }
+
+/*SUSHI-SALMON*/
+
+#sushi-salmon {
+  background: rgb(255, 223, 153);
+}
+
+#sushi-salmon div {
+  height: 100px;
+  width: 230px;
+  background: white;
+  margin-left: -115px;
+  margin-top: -37px;
+  border-top-left-radius: 85px 50px;
+  border-top-right-radius: 85px 50px;
+  border-bottom-left-radius: 40px 50px;
+  border-bottom-right-radius: 45px 50px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 60%, transparent 32%);
+  box-shadow: 0 25px 0 -20px rgba(0, 0, 0, 0.1);
+
+}
+
+#sushi-salmon div:before {
+    width: 280px;
+    height: 50px;
+    margin-left: -140px;
+    left: 50%;
+    border-top-left-radius: 90px 30px;
+    border-top-right-radius: 80px 20px;
+    border-bottom-left-radius: 15px 20px;
+    border-bottom-right-radius: 15px 20px;
+    background: #f19861;
+    background-image: linear-gradient(to bottom, transparent 70%, rgba(0,0,0,0.05) 70%), repeating-linear-gradient(45deg, #f19861, #f19861 20px, #ffcdaf 20px, #ffcdaf 25px);
+}
+
+
 
 
 /* FRISBEE */
